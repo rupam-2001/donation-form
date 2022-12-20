@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <link rel="icon" type="image/x-icon" href="photos/360_F_100393469_AamtAVEVmdbTeUeUgCmvirnyO0eq8hW8.jpg">
+    <link rel="stylesheet" href="form.css">
+    <title>Doner Form</title>
+</head>
+<body>
+<div class="container">
+    <form onsubmit="myfunction()" action="/paypal.html">
+        <div class="field" tabindex="1">
+            <label for="username">
+                <i class="far fa-user"></i>Your Name
+            </label>
+            <input name="username" type="text" placeholder="e.g. john doe" required>
+        </div>
+        <div class="field" tabindex="2">
+            <label for="email">
+                <i class="far fa-envelope"></i>Your Email
+            </label>
+            <input name="email" type="text" placeholder="email@domain.com" required>
+        </div>
+        <div class="field" tabindex="3">
+            <label for="message">
+                <i class="far fa-edit"></i>Your Message
+            </label>
+            <textarea name="message" placeholder="type here" required></textarea>
+        </div>
+        <button type="submit">Donate</button>
+    </form>
+</div>
+<script>
+    function myfunction() {
+        alert("Form submitted, thank you")
+    }
+</script>
+</body>
+
+</html>
